@@ -40,15 +40,15 @@ Notes:
 #include <RTClib.h>
 
 
-const char ssid[] = "rpnet-5g";
-const char password[] = "toomanysecrets14";
+const char ssid[] = "your-ssid"; // add your required ssid
+const char password[] = "your-passowrd"; // add your own netywork password
 
 millisDelay updateDelay; // the update delay object. used for ntp periodic update.
 
 unsigned int localPort = 2390;      // local port to listen for UDP packets
 
 #ifdef USELOCALNTP
-    char timeServer[] = "10.1.1.59"; // local NTP server 
+    char timeServer[] = "n.n.n.n"; // local NTP server 
 #else
     char timeServer[] = "time.nist.gov"; // extenral NTP server e.g. time.nist.gov
 #endif
